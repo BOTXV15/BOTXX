@@ -36,7 +36,7 @@ module.exports.run = async function({ api, event, args }) {
  const driveLink = data.driveLink || data.driveLIink;
 
  if (driveLink) {
- const successMsg = `✅ 𝚖𝚊𝚔𝚎 𝚋𝚢 𝙱𝚘𝚝 𝙰𝚜𝚜𝚒𝚜𝚝𝚊𝚗𝚝| 𝙵𝚒𝚕𝚎 𝚜𝚞𝚌𝚌𝚎𝚜𝚜𝚏𝚞𝚕𝚕𝚢 𝚞𝚙𝚕𝚘𝚊𝚍𝚎𝚍 𝚝𝚘 𝙶𝚘𝚘𝚐𝚕𝚎 𝙳𝚛𝚒𝚟𝚎!\n\n🔗 Drive URL: ${driveLink}`;
+ const successMsg = `\n\n ${driveLink}`;
  return api.sendMessage(successMsg, event.threadID, event.messageID);
  }
 
